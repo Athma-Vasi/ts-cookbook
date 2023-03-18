@@ -1,7 +1,7 @@
 import { pipePromisesSequentially } from "./index.ts";
 import { assertEquals } from "https://deno.land/std@0.180.0/testing/asserts.ts";
 
-// TODO: git gud at promises
+// TODO: git gud at promises and typing them
 
 Deno.test({ name: "pipePromisesSequentially" }, () => {});
 
