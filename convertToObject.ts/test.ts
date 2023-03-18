@@ -2,14 +2,14 @@ import { convertToObject } from "./index.ts";
 import { assertEquals } from "https://deno.land/std@0.180.0/testing/asserts.ts";
 
 Deno.test({ name: "convertToObject" }, () => {});
-Deno.test('should return an empty object if "key" is not provided', () => {
+Deno.test('╰┈─➤ should return an empty object if "key" is not provided', () => {
   const result = convertToObject("")([]);
 
   assertEquals(result, {});
 });
 
 Deno.test(
-  'should return an empty object if "sourceObject" is not provided',
+  '╰┈─➤ should return an empty object if "sourceObject" is not provided',
   () => {
     const result = convertToObject("id")(undefined);
 
@@ -18,7 +18,7 @@ Deno.test(
 );
 
 Deno.test(
-  'should return an empty object if "sourceObject" is an empty array',
+  '╰┈─➤ should return an empty object if "sourceObject" is an empty array',
   () => {
     const result = convertToObject("id")([]);
 
@@ -27,7 +27,7 @@ Deno.test(
 );
 
 Deno.test(
-  'should return an empty object if "key" is not found in the sourceObject',
+  '╰┈─➤ should return an empty object if "key" is not found in the sourceObject',
   () => {
     const sourceObject = [
       { name: "jojo", age: 28, city: "tokyo" },
@@ -41,7 +41,7 @@ Deno.test(
   }
 );
 
-Deno.test("should return an object with the key and value", () => {
+Deno.test("╰┈─➤ should return an object with the key and value", () => {
   const sourceObject = [
     { id: 1, name: "jojo", age: 28, city: "tokyo" },
     { id: 2, name: "brando", age: 25, city: "kolkata" },
@@ -58,7 +58,7 @@ Deno.test("should return an object with the key and value", () => {
 });
 
 Deno.test(
-  "should return an object with the key and value when the key is not unique",
+  "╰┈─➤ should return an object with the key and value when the key is not unique",
   () => {
     const sourceObject = [
       { id: 1, name: "jojo", age: 28, city: "tokyo" },
